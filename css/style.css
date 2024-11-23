@@ -1,0 +1,167 @@
+body {
+    position: relative;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    background-color: ghostwhite;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    width: 100%;
+    height: auto;
+    max-height: 100px;
+    z-index: 999;
+    transition: box-shadow .3s;
+}
+
+.header-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: padding-top .3s, padding-bottom .3s;
+}
+
+.header .title {
+    font-size: 36px;
+    margin-left: 125px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    user-select: none;
+}
+
+.header-menu {
+    list-style: none;
+    padding: 0px;
+    margin: 0px 75px 0px 0px;
+}
+
+.header-menu li {
+    display: inline-block;
+}
+
+.header-menu li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    opacity: 0.7;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-menu li a:hover {
+    transition: 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.header-scroll {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-scroll .header-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.strelka-hidden#fadeOut {
+    animation: fadeOut .7s;
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.strelka-hidden {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin-right: 50px;
+    margin-bottom: 35px;
+    opacity: 0;
+    pointer-events: none;
+    cursor: default;
+}
+
+.strelka  {
+    animation: fadeIn .7s forwards;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin-right: 50px;
+    margin-bottom: 35px;
+    user-select: none;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+main {
+    padding-top: 125px;
+    padding-bottom: 10px;
+    z-index: 1;
+    height: auto;
+}
+
+.main-container {
+    text-align: left;
+    width: 950px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#introduction {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0px;
+    padding-top: 64px;
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+#strelka-img {
+    width: 75px;
+    height: 75px
+}
+
+img {
+    display: block;
+    max-width: 950px;
+    margin: 20px 0 5px 0;
+    height: auto;
+    border-radius: 15px;
+}
+
+.text-image {
+    margin: 0px;
+    opacity: .7;
+}
+
+#m1-img, #m1-text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+@media  (max-width: 1600px) {
+    ul {
+        display: none;
+    }
+}
+
+@media  (max-width: 470px) {
+    .header .title {
+        margin-left: 10px;
+    }
+}
