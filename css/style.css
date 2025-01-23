@@ -116,7 +116,7 @@ main {
 }
 
 .main-container {
-    text-align: left;
+    text-align: justify;
     width: 950px;
     padding: 0px;
     margin-left: auto;
@@ -124,6 +124,7 @@ main {
 }
 
 #introduction {
+    text-align: left;
     margin-top: 30px;
     font-size: 30px;
     font-weight: 500;
